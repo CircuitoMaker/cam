@@ -74,4 +74,6 @@ Object.entries(devices).forEach(([key]) => {
 });
 
 app.get('/client',(_req,res)=>{ res.sendFile(path.resolve(__dirname,'./public/client.html')); });
-app.listen(HTTP_PORT,()=>{ console.log(`HTTP server starting on ${HTTP_PORT}`); });
+app.listen(process.env.PORT || HTTP_PORT,()=>{ 
+	console.log(`HTTP server starting on ${HTTP_PORT}`); 
+});
