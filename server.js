@@ -9,9 +9,12 @@ app.use('/static', express.static(path.join(__dirname, 'public')));
 let clients = [];
 
 const HTTP_PORT = 8000;
+const PORT1 = process.env.PORT || 8888;
 let devices = {
-	relay_module1: { port: 8888 },
+	relay_module1: { port: PORT1 },
 };
+console.log("porta = " + PORT1);
+
 
 process.on('uncaughtException', (error, origin) => {
 	console.log('----- Uncaught exception -----');
