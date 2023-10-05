@@ -11,7 +11,7 @@ let clients = [];
 const HTTP_PORT = 8000;
 
 let devices = {
-	relay_module1: { port: process.env.PORT || 8888 },
+	relay_module1: { port: 8888 },
 };
 
 
