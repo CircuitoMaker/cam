@@ -1,4 +1,7 @@
-const ws = new WebSocket('ws://192.168.1.140:8999');
+//const ws = new WebSocket('ws://192.168.1.140:8999');
+const ws = new WebSocket('ws://cam-production.up.railway.app:8999');
+
+
 
 ws.addEventListener('open', (event) => {
     ws.send(JSON.stringify({

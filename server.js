@@ -10,7 +10,7 @@ let clients = [];
 
 const HTTP_PORT = 8000;
 let devices = {
-	relay_module1: { port: 6006 },
+	relay_module1: { port: 6006 },//8888
 };
 
 
